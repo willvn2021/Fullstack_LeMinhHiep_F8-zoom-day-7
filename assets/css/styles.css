@@ -255,9 +255,32 @@ h1.heading {
 }
 
 .course-item .thumb-wrapper {
+    position: relative;
     display: block;
     aspect-ratio: 1 / 0.8;
     overflow: hidden;
+}
+
+.ribbon {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 70px solid var(--primary-color);
+    border-left: 70px solid transparent;
+}
+
+.ribbon::before {
+    content: "\f0e7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    bottom: 32px;
+    right: 10px;
+    font-size: 22px;
+    color: var(--white);
 }
 
 .course-item .course-thumb {
