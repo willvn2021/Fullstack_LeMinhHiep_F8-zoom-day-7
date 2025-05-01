@@ -527,3 +527,38 @@ h1.heading {
     background: var(--white);
     color: var(--primary-color);
 }
+
+/* Online Course */
+
+.lesson {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25vw;
+    height: 100vh;
+    background: #d1d1d1;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.lesson .lesson-head {
+    position: sticky;
+    top: 0;
+    padding: 15px 20px;
+    height: 80px;
+    width: 100%;
+    background-color: #151515;
+}
+
+.less-list {
+    padding: 15px 40px;
+}
+
+.less-list li + li {
+    margin-top: 15px;
+}
+
+.less-list li a {
+    color: #151515;
+    text-decoration: none;
+}
